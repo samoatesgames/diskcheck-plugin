@@ -11,10 +11,10 @@
     tags they use. Views are always organized according to its owner class,
     so it should be straightforward to find them.
   -->
-  <f:section title="Disk Check" name="disk-check">
-     <f:entry title="Threshold for disk Check(Gb)" 
-      description="Enter the disk space(in GB integer only) that should be available on Disk before a project Starts Default is 2 Gb  ">
-      <f:textbox field="spacecheck" value="${it.spacecheck}" default="2"/>
+  <f:section title="Disk check" name="disk-check">
+     <f:entry title="Required disk space on nodes" 
+      description="Enter the disk space (in Mb) that should be available on a slaves workspace before a project starts. (Default: 2048Mb)">
+      <f:textbox field="requiredSpaceInMb" value="${it.requiredSpaceInMb}" default="2048"/>
     </f:entry>
   </f:section>
 </j:jelly>

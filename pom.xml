@@ -1,70 +1,70 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">  
-<modelVersion>4.0.0</modelVersion>
-  <parent>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>2.33</version>
+    </parent>
+
     <groupId>org.jenkins-ci.plugins</groupId>
-    <artifactId>plugin</artifactId>
-    <version>2.33</version>
-  </parent>
+    <artifactId>diskcheck</artifactId>
+    <version>1.00-CODEMASTERS</version>
+    <packaging>hpi</packaging>
 
-  <groupId>org.jenkins-ci.plugins</groupId>
-  <artifactId>diskcheck</artifactId>
-  <version>1.00-CODEMASTERS</version>
-  <packaging>hpi</packaging>
-
-  <licenses>
-    <license>
-      <name>MIT License</name>
-      <url>http://opensource.org/licenses/MIT</url>
-    </license>
-  </licenses>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
   
-  <properties>
-    <jenkins.version>1.642.3</jenkins.version>
-	<maven.test.skip>true</maven.test.skip>
-  </properties>
+    <properties>
+        <jenkins.version>1.642.3</jenkins.version>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.jvnet.hudson</groupId>
-      <artifactId>xstream</artifactId>
-      <version>1.4.7-jenkins-1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.jvnet.hudson</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.7-jenkins-1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-  <distributionManagement>
-   <repository>
-    <id>maven.jenkins-ci.org</id>
-    <url>https://repo.jenkins-ci.org/releases/</url>
-   </repository>
-  </distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>maven.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/releases/</url>
+        </repository>
+    </distributionManagement>
 
-  <developers>
-    <developer>
-      <id>mthak</id>
-      <name>Manoj Thakkar</name>
-      <email>mthakkar@cloudera.com</email>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>mthak</id>
+            <name>Manoj Thakkar</name>
+            <email>mthakkar@cloudera.com</email>
+        </developer>
+    </developers>
 
-  <scm>
-    <connection>scm:git:git://github.com/jenkinsci/diskcheck-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/diskcheck-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/diskcheck-plugin</url>
-  </scm>
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/diskcheck-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/diskcheck-plugin.git</developerConnection>
+        <url>http://github.com/jenkinsci/diskcheck-plugin</url>
+    </scm>
 
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
 
-  <pluginRepositories>
-    <pluginRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
